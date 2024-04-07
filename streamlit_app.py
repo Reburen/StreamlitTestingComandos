@@ -1,6 +1,6 @@
 import streamlit as st
 
-btn1 = 0
+btn1 = 1
 
 st.title('Ejemplo de agregar botones después de hacer clic')
 
