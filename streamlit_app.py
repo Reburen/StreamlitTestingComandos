@@ -15,12 +15,12 @@ if boton1_clickeado:
     boton3_clickeado = st.button('Botón 3')
 
     # Si se hace clic en el Botón 2
-    if boton2_clickeado:
+if boton2_clickeado:
         st.write('Has presionado el Botón 2.')
         # Coloca aquí el código correspondiente al Botón 2
     
     # Si se hace clic en el Botón 3
-    if boton3_clickeado:
+if boton3_clickeado:
         st.write('Has presionado el Botón 3.')
         # Coloca aquí el código correspondiente al Botón 3
 
