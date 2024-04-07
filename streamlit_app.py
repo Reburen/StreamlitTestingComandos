@@ -1,36 +1,27 @@
 import streamlit as st
 
-btn1 = 1
+# Verifica si los botones se han inicializado en la sesión
+if 'button1_clicked' not in st.session_state:
+    st.session_state.button1_clicked = False
 
-st.title('Ejemplo de agregar botones después de hacer clic')
-
-# Variable de estado para controlar si se ha hecho clic en el primer botón
-boton1_clickeado = st.button('Botón 1')
+# Primer botón
+button1_clicked = st.button('Botón 1')
 
 # Si se hace clic en el Botón 1
-if boton1_clickeado:
-    st.write('Has presionado el Botón 1.')
-    btn1 = 1
-    # Aquí puedes agregar código adicional que deseas ejecutar después de hacer clic en el Botón 1
-    
-    # Agregar más botones después de hacer clic en el Botón 1
-   # boton2_clickeado = st.button('Botón 2')
- #   boton3_clickeado = st.button('Botón 3')
+if button1_clicked:
+    st.session_state.button1_clicked = True
 
-    # Si se hace clic en el Botón 2
+# Verifica si los botones se han inicializado en la sesión
+if 'button2_clicked' not in st.session_state:
+    st.session_state.button2_clicked = False
 
-if btn1 == 1:
-    
-    boton2_clickeado = st.button('Botón 2')
-    boton3_clickeado = st.button('Botón 3')
-    if boton2_clickeado and btn1 == 1:
-            st.write('Has presionado el Botón 2.')
-            btn1 = 1
-            # Coloca aquí el código correspondiente al Botón 2
-        
-        # Si se hace clic en el Botón 3
-    if boton3_clickeado and btn1 == 1:
-            st.write('Has presionado el Botón 3.')
-            btn1 = 1
-            # Coloca aquí el código correspondiente al Botón 3
+# Segundo botón
+button2_clicked = st.button('Botón 2')
 
+# Si se hace clic en el Botón 2
+if button2_clicked:
+    st.session_state.button2_clicked = True
+
+# Imprimir el estado de los botones
+st.write('Estado del Botón 1:', st.session_state.button1_clicked)
+st.write('Estado del Botón 2:', st.session_state.button2_clicked)
