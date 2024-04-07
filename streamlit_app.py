@@ -2,6 +2,7 @@ import streamlit as st
 
 st.title('Ejemplo de agregar botones después de hacer clic')
 
+    boton1_clickeado = st.button('Botón 1')
 # Verifica si ya hemos inicializado los botones en la sesión
 if 'botones_inicializados' not in st.session_state:
     st.session_state.botones_inicializados = False
