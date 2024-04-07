@@ -12,7 +12,7 @@ if not st.session_state.botones_inicializados:
     st.session_state.botones_inicializados = True
 
 # Si se ha hecho clic en el Botón 1
-if st.session_state.botones_inicializados and boton1_clickeado:
+if (st.session_state.botones_inicializados and boton1_clickeado):
     st.write('Has presionado el Botón 1.')
     # Aquí puedes agregar código adicional que deseas ejecutar después de hacer clic en el Botón 1
     
