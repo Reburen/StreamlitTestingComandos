@@ -12,7 +12,7 @@ if button1_clicked:
     button4_clicked = st.button('Botón 4')
     if button3_clicked:
         st.write('Botón 3')
-    if Button4_clicked:
+    if button4_clicked:
         st.write('Botón 4')
 
 if button2_clicked:
@@ -22,5 +22,5 @@ if button2_clicked:
     button4_clicked = st.button('Botón 4')
     if button3_clicked:
         st.write('Botón 3')
-    if Button4_clicked:
+    if button4_clicked:
         st.write('Botón 4')
