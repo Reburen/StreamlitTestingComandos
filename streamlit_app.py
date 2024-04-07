@@ -11,10 +11,12 @@ if boton1_clickeado:
     # Aquí puedes agregar código adicional que deseas ejecutar después de hacer clic en el Botón 1
     
     # Agregar más botones después de hacer clic en el Botón 1
-    boton2_clickeado = st.button('Botón 2')
-    boton3_clickeado = st.button('Botón 3')
+   # boton2_clickeado = st.button('Botón 2')
+ #   boton3_clickeado = st.button('Botón 3')
 
     # Si se hace clic en el Botón 2
+boton2_clickeado = st.button('Botón 2')
+boton3_clickeado = st.button('Botón 3')
 if boton2_clickeado:
         st.write('Has presionado el Botón 2.')
         # Coloca aquí el código correspondiente al Botón 2
